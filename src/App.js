@@ -15,7 +15,9 @@ import Stylesheet from './components/Stylesheet';
 import UserGreeting from './components/UserGreeting';
 import Welcome from './components/Welcome';
 import Form from './components/Form';
-
+import LifecycleA from './components/LifecycleA';
+import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
 function App() {
   return (
     <div className="App">
@@ -23,9 +25,9 @@ function App() {
       <h1 className={styles.success}>Success</h1> */}
        {/* <Greet name ='Teddy' heroName="Superman">
         <p>This is children props</p>
-       </Greet>
+        </Greet>
        <Greet name ='Kale' heroName="Mar">
-        <button>Action</button>
+       <button>Action</button>
        </Greet>
        <Greet name ='Emi' heroName="Kimem"/>
        <Welcome name ='Teddy' heroName="Superman"/> 
@@ -42,7 +44,10 @@ function App() {
       {/* <NameList /> */}
       {/* <Stylesheet  primary={true}/> */}
       {/* <Inline /> */}
-      <Form />
+      {/* <Form /> */}
+      {/* <LifecycleA /> */}
+      {/* <FragmentDemo /> */}
+      <Table />
     </div>
   );
 }
