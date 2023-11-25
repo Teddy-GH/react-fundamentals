@@ -28,6 +28,14 @@ import Hero from "./components/Hero";
 import ErrorBoundary from "./components/ErrorBoundary";
 import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
+import ClickCounterTwo from "./components/ClickCounterTwo";
+import HoverCounterTwo from "./components/HoverCounterTwo";
+import User from "./components/User";
+import RenderCounter from "./components/RenderCounter";
+import ComponentC from "./components/context/ComponentC";
+import { UserProvider } from "./components/context/userContext";
+import PostList from "./components/http-axios/PostList";
+import PostForm from "./components/http-axios/PostForm";
 function App() {
   return (
     <div className="App">
@@ -72,8 +80,35 @@ function App() {
       <ErrorBoundary>
         <Hero heroName="Joker" />
       </ErrorBoundary> */}
-      <ClickCounter name="Teddy"/>
-      <HoverCounter />
+      {/* <ClickCounter name="Teddy"/> */}
+      {/* <HoverCounter /> */}
+      {/* <ClickCounterTwo />
+      <HoverCounterTwo />
+      <User render={(isLoggedIn) => isLoggedIn?  "Teddy" : "Guest"} /> */}
+      {/* <RenderCounter>
+        {(count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      </RenderCounter>
+
+      <RenderCounter>
+        {(count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      </RenderCounter> */}
+
+      {/* <RenderCounter
+        render={(count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      /> */}
+
+{/* Context */}
+      {/* <UserProvider value="Teddy">
+        <ComponentC />
+      </UserProvider> */}
+      {/* <PostList /> */}
+      <PostForm />
     </div>
   );
 }
