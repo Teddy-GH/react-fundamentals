@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import styles from "./appStyles.module.css";
 import "./appStyles.css";
@@ -36,6 +37,24 @@ import ComponentC from "./components/context/ComponentC";
 import { UserProvider } from "./components/context/userContext";
 import PostList from "./components/http-axios/PostList";
 import PostForm from "./components/http-axios/PostForm";
+import CounterHook from "./components/hooks/CounterHook";
+import HookCounter from "./components/hooks/HookCounter";
+import HookCounterTwo from "./components/hooks/HookCounterTwo";
+import HookCounterThree from "./components/hooks/HookCounterThree";
+import EffectHookOne from "./components/hooks/EffectHookOne";
+import ClassCounterOne from "./components/hooks/ClassCounterOne";
+import ClassCounterTwo from "./components/hooks/ClassCounterTwo";
+import ClassMouse from "./components/hooks/ClassMouse";
+import HookMouse from "./components/hooks/HookMouse";
+import MouseContainer from "./components/hooks/MouseContainer";
+import IntervalClassCounter from "./components/hooks/IntervalClassCounter";
+import IntervalHookCounter from "./components/hooks/IntervalHookCounter";
+import DataFetching from "./components/hooks/DataFetching";
+import CountUseReducer from "./components/hooks/CountUseReducer";
+import UseReducerCountTwo from "./components/hooks/UseReducerCounterTwo";
+import CountReducerThree from "./components/hooks/CountReducerThree";
+
+export const ChannelContext = React.createContext();
 function App() {
   return (
     <div className="App">
@@ -103,12 +122,35 @@ function App() {
         )}
       /> */}
 
-{/* Context */}
+      {/* Context */}
       {/* <UserProvider value="Teddy">
         <ComponentC />
       </UserProvider> */}
       {/* <PostList /> */}
-      <PostForm />
+      {/* <PostForm /> */}
+      {/* <CounterHook /> */}
+      {/* <HookCounter /> */}
+      {/* <HookCounterTwo /> */}
+      {/* <HookCounterThree /> */}
+      {/* <EffectHookOne /> */}
+      {/* <ClassCounterOne /> */}
+      {/* <ClassCounterTwo /> */}
+      {/* <ClassMouse /> */}
+      {/* <HookMouse /> */}
+      {/* <MouseContainer /> */}
+      {/* <IntervalClassCounter /> */}
+      {/* <IntervalHookCounter /> */}
+      {/* <DataFetching /> */}
+
+      {/* <UserProvider value="Teddy">
+        <ChannelContext.Provider value={"TeddyIctSolutions"}>
+          <ComponentC />
+        </ChannelContext.Provider>
+      </UserProvider> */}
+
+      {/* <CountUseReducer /> */}
+      {/* <UseReducerCountTwo /> */}
+      <CountReducerThree />
     </div>
   );
 }

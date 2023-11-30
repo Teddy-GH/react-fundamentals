@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ComponentF from './ComponentF'
 import UserContext from './userContext'
+import { ChannelContext } from '../../App'
 
  class ComponentE extends Component {
     // Passing context type using static key word
